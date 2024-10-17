@@ -1,0 +1,21 @@
+.container{
+  /* width: 100%; */
+  background: #424242;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+}
+.container>a> h2{
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+}
+.container > a {
+  text-decoration: none; /* Optional: to remove the underline from the link */
+}
+
+.container > a > p {
+  color: white;
+  font-size: 18px; /* Adjust size as needed */
+}

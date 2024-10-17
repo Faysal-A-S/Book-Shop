@@ -1,0 +1,9 @@
+.container{
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+}
+
+.container>h2{
+  font-size: 22px;
+}
