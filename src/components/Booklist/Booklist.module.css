@@ -1,0 +1,22 @@
+.container{
+  margin-top: 30px;
+
+  margin-bottom: 30px;
+}
+.wrapper{
+  display: grid;
+  grid-template-columns: repeat(5,minmax(0,1fr));
+  gap: 20px;
+  margin-bottom: 16px;
+}
+.pagination{
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 480px) {
+.wrapper{
+  grid-template-columns: repeat(2,minmax(0,1fr));
+}
+}
