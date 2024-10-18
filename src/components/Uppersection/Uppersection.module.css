@@ -2,8 +2,49 @@
   display: flex;
   justify-content: space-between;
   place-items: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
 }
 
 .container>h2{
   font-size: 22px;
+  color: #02022C;
+}
+.search{
+  display: flex;
+  place-items: center;
+  position: relative;
+}
+
+.search>input{
+  height: 25px;
+  padding-left: 20px;
+  border-radius: 20px;
+  width: 300px;
+  border:  1px solid #94969c;
+  font-size: 14px;
+}
+.search>input:focus{
+  outline: none;
+  border: 1px solid rgb(238, 124, 124);
+}
+.searchIcon{
+  position: absolute;
+  right: 10px;
+}
+
+
+@media (max-width: 480px) {
+  .search{
+    flex-grow: 1;
+  }
+  .search>input{
+    flex-basis: 100%;
+    flex-grow: 1;
+  }
+  .filter{
+    flex-basis: 100%;
+    margin-top: 20px;
+    margin-bottom: -10px;
+  }
 }
