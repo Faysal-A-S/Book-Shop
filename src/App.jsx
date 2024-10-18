@@ -3,6 +3,7 @@ import { Route, Routes,BrowserRouter as Router } from 'react-router-dom'
 import './App.css'
 import Homepage from './pages/Homepage'
 import Navbar from './components/Navbar/Navbar'
+import WishListPage from './pages/WishListPage'
 
 
 function App() {
@@ -15,9 +16,10 @@ function App() {
    <Router>
    
    <Navbar/>
-<div style={{margin:"20px"}}>
+<div className='container'>
 <Routes >
         <Route path='/' element={<Homepage/>}/>
+        <Route path='/wishlist' element={<WishListPage/>}/>
     </Routes>
 </div>
 
