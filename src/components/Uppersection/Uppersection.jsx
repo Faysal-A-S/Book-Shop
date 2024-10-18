@@ -1,14 +1,14 @@
 import classes from "./Uppersection.module.css"
-
-const Uppersection = () => {
+import { FaSearch } from "react-icons/fa";
+const Uppersection = ({setTitle,pageTitle,title}) => {
   return (
     <div className={classes.container}>
-      <h2>Books</h2>
-      <div>
-        <input type="text" />
-        <button></button>
+      <h2>{pageTitle}</h2>
+      <div className={classes.search}>
+        <input type="text" placeholder="Search books by title..." onChange={(e)=>setTitle(e.target.value)} value={title}/>
+        <FaSearch className={classes.searchIcon}/>
       </div>
-      <div>
+      <div className={classes.filter}>
         filter
       </div>
     </div>
