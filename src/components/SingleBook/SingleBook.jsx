@@ -12,8 +12,8 @@ const SingleBook = ({ data }) => {
       <p className={classes.author}>
         <span>Authors:</span> {authors[0].name}
       </p>
+      <p className={classes.tagTitle}>Topic:</p>
       <p className={classes.tags}>
-        Topics: <br />
         {subjects.length > 0 &&
           subjects.map((subject, index) => (
             <>
