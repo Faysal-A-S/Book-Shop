@@ -1,4 +1,4 @@
-.container{
+.container {
   /* width: 100%; */
   background: #424242;
   padding: 5px 20px;
@@ -6,7 +6,7 @@
   justify-content: space-between;
   place-items: center;
 }
-.container>a> h2{
+.container > a > h2 {
   font-size: 20px;
   color: white;
   font-weight: 600;
@@ -15,11 +15,16 @@
   text-decoration: none;
 }
 
-.container > a > p {
+.link {
   color: white;
-  font-size: 18px; 
-  transition: all .2s ease-in;
+  font-size: 18px;
+  transition: all 0.2s ease-in;
 }
-.container>a>p:hover{
+.selected {
+  color: rgb(238, 124, 124);
+  font-size: 18px;
+  transition: all 0.2s ease-in;
+}
+.link:hover {
   color: rgb(238, 124, 124);
 }
