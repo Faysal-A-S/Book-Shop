@@ -91,3 +91,19 @@
   color: #02022c;
   font-weight: 500;
 }
+@media (max-width: 480px) {
+  .container>p{
+    text-align: center;
+  }
+  .container > button {
+
+  top: 22px;
+  right: 4px;
+}
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container > button {
+  top: 23px;
+ 
+}
+}
