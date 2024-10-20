@@ -1,55 +1,62 @@
-.container{
+.container {
   background: white;
   padding: 25px;
   border-radius: 6px;
   position: relative;
-  transition: all .2s ease-in;
+  transition: all 0.2s ease-in;
 }
-.container:hover{
+.container:hover {
   scale: 1.1;
-  transition: all .2s ease-in;
+  transition: all 0.2s ease-in;
 }
-.container>p{
+.link {
+  text-decoration: none;
+}
+.container > p {
   margin: 0;
   padding: 0;
-  color: #02022C;
+  color: #02022c;
   font-weight: 500;
   font-size: 12px;
   margin-bottom: 12px;
 }
-.imageContainer{
+.imageContainer {
   display: flex;
   justify-content: center;
   place-items: center;
-
 }
-.imageContainer>img{
+.imageContainer > img {
   height: 150px;
   width: 100px;
 
   object-fit: contain;
 }
-.heartIcon{
+.container > button {
   position: absolute;
-  top:25px;
+  background: none;
+  z-index: 5000;
+  top: 25px;
+  border: none;
   right: 25px;
+}
+.heartIcon {
   cursor: pointer;
-  transition: all .2s ease-in;
+  transition: all 0.2s ease-in;
+  color: #555555;
 }
-.heartIcon:hover{
-  transition: all .2s ease-in;
+.heartIcon:hover {
+  transition: all 0.2s ease-in;
   color: rgb(238, 124, 124);
-
 }
-.details{
+.details {
   text-align: center;
   margin-top: 8px;
 }
-.details>h2{
+.details > h2 {
   font-size: 16px;
   font-weight: 500;
   line-height: 23px;
-  color: #02022C;
+  color: #02022c;
   padding: 0;
   margin: 0;
   line-clamp: 2;
@@ -61,25 +68,25 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 23px;
-  color: #02022C;
+  color: #02022c;
   padding: 0;
   margin: 0;
-  
-  display: -webkit-box; 
-  -webkit-box-orient: vertical; 
-  -webkit-line-clamp: 2; 
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
   line-clamp: 2;
-  overflow: hidden; 
+  overflow: hidden;
   text-overflow: ellipsis;
 }
-.details>p{
+.details > p {
   font-size: 12px;
   padding: 0;
   margin: 0;
   color: #555555;
   margin-top: 5px;
 }
-.details>p>span{
-  color: #02022C;
+.details > p > span {
+  color: #02022c;
   font-weight: 500;
 }
