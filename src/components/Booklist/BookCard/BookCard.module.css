@@ -85,6 +85,7 @@
   margin: 0;
   color: #555555;
   margin-top: 5px;
+  font-family: var(--secondary-font);
 }
 .details > p > span {
   color: #02022c;
